@@ -1,13 +1,3 @@
-// // import logo from './logo.svg';
-// // import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">hi</div>
-//   );
-// }
-
-// export default App;
 // src/App.js
 import React, { useState } from "react";
 import Sidebar from "./components/Sidebar";
@@ -25,7 +15,7 @@ const App = () => {
       <Sidebar setFeature={setFeature} />
       <div className="viewer">
         {/* Display the PDF Viewer */}
-        <PDFViewer file="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" />
+        <PDFViewer file="/sample.pdf" />
         
         {/* Conditional Rendering of Features */}
         {feature === "annotations" && <AnnotationFeature />}
